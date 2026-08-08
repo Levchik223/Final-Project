@@ -121,14 +121,12 @@ public class ArcherAi : MonoBehaviour
   else if (distanceToPlayer > shootingDistance)
   {
    IsRetreating = false;
-  // IsAttacking = false;
    _navMeshAgent.isStopped = false;
    _navMeshAgent.SetDestination(Player.Instance.transform.position);
   }
   else
   {
    IsRetreating = false;
-   //IsAttacking = true;
    _navMeshAgent.isStopped = true;
    _navMeshAgent.ResetPath();
    if (_attackTimer <= 0f)
@@ -194,8 +192,6 @@ public class ArcherAi : MonoBehaviour
    }
 
    enabled = false;
-   //archerVisual.SetDead();
-   //enabled = false;
   }
  
 }

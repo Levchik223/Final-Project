@@ -92,7 +92,6 @@ public class Player : MonoBehaviour
     {
       _currentHealth = maxHealth;
     }
-    Debug.Log("current heaal = " + _currentHealth);
   }
 
   private void DetectDeath()
